@@ -47,10 +47,17 @@ namespace QuanLyKho
                this.label1 = new System.Windows.Forms.Label();
                this.tbTotalPriceItem = new System.Windows.Forms.TextBox();
                this.panel10 = new System.Windows.Forms.Panel();
+               this.btnSaveItem = new DevExpress.XtraEditors.SimpleButton();
+               this.btnCancelItem = new DevExpress.XtraEditors.SimpleButton();
+               this.btnDeleteItem = new DevExpress.XtraEditors.SimpleButton();
+               this.btnEditItem = new DevExpress.XtraEditors.SimpleButton();
+               this.btnAddItem = new DevExpress.XtraEditors.SimpleButton();
                this.panel1 = new System.Windows.Forms.Panel();
                this.panel2 = new System.Windows.Forms.Panel();
                this.panel6 = new System.Windows.Forms.Panel();
                this.panel7 = new System.Windows.Forms.Panel();
+               this.btnCancelBill = new DevExpress.XtraEditors.SimpleButton();
+               this.btnPrintBill = new DevExpress.XtraEditors.SimpleButton();
                this.panel5 = new System.Windows.Forms.Panel();
                this.tbEmployeesGive = new System.Windows.Forms.TextBox();
                this.tbCustomerGive = new System.Windows.Forms.TextBox();
@@ -61,15 +68,15 @@ namespace QuanLyKho
                this.panel4 = new System.Windows.Forms.Panel();
                this.label3 = new System.Windows.Forms.Label();
                this.panel8 = new System.Windows.Forms.Panel();
+               this.gctBill = new DevExpress.XtraGrid.GridControl();
+               this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+               this.ItemName = new DevExpress.XtraGrid.Columns.GridColumn();
+               this.Price = new DevExpress.XtraGrid.Columns.GridColumn();
+               this.NumOfItem = new DevExpress.XtraGrid.Columns.GridColumn();
+               this.TotalPriceOfItem = new DevExpress.XtraGrid.Columns.GridColumn();
+               this.itemId = new DevExpress.XtraGrid.Columns.GridColumn();
                this.panel3 = new System.Windows.Forms.Panel();
                this.panel9 = new System.Windows.Forms.Panel();
-               this.btnCancelBill = new DevExpress.XtraEditors.SimpleButton();
-               this.btnPrintBill = new DevExpress.XtraEditors.SimpleButton();
-               this.btnSaveItem = new DevExpress.XtraEditors.SimpleButton();
-               this.btnCancelItem = new DevExpress.XtraEditors.SimpleButton();
-               this.btnDeleteItem = new DevExpress.XtraEditors.SimpleButton();
-               this.btnEditItem = new DevExpress.XtraEditors.SimpleButton();
-               this.btnAddItem = new DevExpress.XtraEditors.SimpleButton();
                this.btnCancelCustomer = new DevExpress.XtraEditors.SimpleButton();
                this.btnAddCustomer = new DevExpress.XtraEditors.SimpleButton();
                ((System.ComponentModel.ISupportInitialize)(this.nudNumOfItem)).BeginInit();
@@ -80,6 +87,9 @@ namespace QuanLyKho
                this.panel7.SuspendLayout();
                this.panel5.SuspendLayout();
                this.panel4.SuspendLayout();
+               this.panel8.SuspendLayout();
+               ((System.ComponentModel.ISupportInitialize)(this.gctBill)).BeginInit();
+               ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
                this.panel3.SuspendLayout();
                this.panel9.SuspendLayout();
                this.SuspendLayout();
@@ -262,13 +272,83 @@ namespace QuanLyKho
                this.panel10.Size = new System.Drawing.Size(685, 258);
                this.panel10.TabIndex = 59;
                // 
+               // btnSaveItem
+               // 
+               this.btnSaveItem.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+               this.btnSaveItem.Appearance.Options.UseFont = true;
+               this.btnSaveItem.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+               this.btnSaveItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSaveItem.ImageOptions.Image")));
+               this.btnSaveItem.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+               this.btnSaveItem.Location = new System.Drawing.Point(419, 171);
+               this.btnSaveItem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+               this.btnSaveItem.Name = "btnSaveItem";
+               this.btnSaveItem.Size = new System.Drawing.Size(112, 46);
+               this.btnSaveItem.TabIndex = 65;
+               this.btnSaveItem.Text = "Đồny ý";
+               // 
+               // btnCancelItem
+               // 
+               this.btnCancelItem.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+               this.btnCancelItem.Appearance.Options.UseFont = true;
+               this.btnCancelItem.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+               this.btnCancelItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelItem.ImageOptions.Image")));
+               this.btnCancelItem.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+               this.btnCancelItem.Location = new System.Drawing.Point(544, 172);
+               this.btnCancelItem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+               this.btnCancelItem.Name = "btnCancelItem";
+               this.btnCancelItem.Size = new System.Drawing.Size(112, 44);
+               this.btnCancelItem.TabIndex = 64;
+               this.btnCancelItem.Text = "Hủy";
+               // 
+               // btnDeleteItem
+               // 
+               this.btnDeleteItem.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+               this.btnDeleteItem.Appearance.Options.UseFont = true;
+               this.btnDeleteItem.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+               this.btnDeleteItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteItem.ImageOptions.Image")));
+               this.btnDeleteItem.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+               this.btnDeleteItem.Location = new System.Drawing.Point(292, 172);
+               this.btnDeleteItem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+               this.btnDeleteItem.Name = "btnDeleteItem";
+               this.btnDeleteItem.Size = new System.Drawing.Size(112, 44);
+               this.btnDeleteItem.TabIndex = 61;
+               this.btnDeleteItem.Text = "Xóa";
+               // 
+               // btnEditItem
+               // 
+               this.btnEditItem.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+               this.btnEditItem.Appearance.Options.UseFont = true;
+               this.btnEditItem.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+               this.btnEditItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnEditItem.ImageOptions.Image")));
+               this.btnEditItem.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+               this.btnEditItem.Location = new System.Drawing.Point(164, 172);
+               this.btnEditItem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+               this.btnEditItem.Name = "btnEditItem";
+               this.btnEditItem.Size = new System.Drawing.Size(112, 44);
+               this.btnEditItem.TabIndex = 62;
+               this.btnEditItem.Text = "Sửa";
+               // 
+               // btnAddItem
+               // 
+               this.btnAddItem.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+               this.btnAddItem.Appearance.Options.UseFont = true;
+               this.btnAddItem.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+               this.btnAddItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAddItem.ImageOptions.Image")));
+               this.btnAddItem.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+               this.btnAddItem.Location = new System.Drawing.Point(35, 172);
+               this.btnAddItem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+               this.btnAddItem.Name = "btnAddItem";
+               this.btnAddItem.Size = new System.Drawing.Size(112, 44);
+               this.btnAddItem.TabIndex = 60;
+               this.btnAddItem.Text = "Thêm";
+               // 
                // panel1
                // 
                this.panel1.Controls.Add(this.panel2);
-               this.panel1.Location = new System.Drawing.Point(-1, 85);
+               this.panel1.Location = new System.Drawing.Point(-5, 4);
                this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
                this.panel1.Name = "panel1";
-               this.panel1.Size = new System.Drawing.Size(1601, 741);
+               this.panel1.Size = new System.Drawing.Size(1605, 822);
                this.panel1.TabIndex = 1;
                // 
                // panel2
@@ -301,6 +381,35 @@ namespace QuanLyKho
                this.panel7.Name = "panel7";
                this.panel7.Size = new System.Drawing.Size(688, 92);
                this.panel7.TabIndex = 60;
+               // 
+               // btnCancelBill
+               // 
+               this.btnCancelBill.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+               this.btnCancelBill.Appearance.Options.UseFont = true;
+               this.btnCancelBill.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+               this.btnCancelBill.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelBill.ImageOptions.Image")));
+               this.btnCancelBill.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+               this.btnCancelBill.Location = new System.Drawing.Point(381, 12);
+               this.btnCancelBill.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+               this.btnCancelBill.Name = "btnCancelBill";
+               this.btnCancelBill.Size = new System.Drawing.Size(141, 69);
+               this.btnCancelBill.TabIndex = 62;
+               this.btnCancelBill.Text = "Hủy";
+               // 
+               // btnPrintBill
+               // 
+               this.btnPrintBill.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+               this.btnPrintBill.Appearance.Options.UseFont = true;
+               this.btnPrintBill.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+               this.btnPrintBill.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnPrintBill.ImageOptions.Image")));
+               this.btnPrintBill.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+               this.btnPrintBill.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+               this.btnPrintBill.Location = new System.Drawing.Point(117, 9);
+               this.btnPrintBill.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+               this.btnPrintBill.Name = "btnPrintBill";
+               this.btnPrintBill.Size = new System.Drawing.Size(141, 69);
+               this.btnPrintBill.TabIndex = 61;
+               this.btnPrintBill.Text = "In hóa đơn";
                // 
                // panel5
                // 
@@ -397,11 +506,84 @@ namespace QuanLyKho
                // 
                // panel8
                // 
+               this.panel8.Controls.Add(this.gctBill);
                this.panel8.Location = new System.Drawing.Point(30, 151);
                this.panel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
                this.panel8.Name = "panel8";
                this.panel8.Size = new System.Drawing.Size(780, 537);
                this.panel8.TabIndex = 0;
+               // 
+               // gctBill
+               // 
+               this.gctBill.Dock = System.Windows.Forms.DockStyle.Fill;
+               this.gctBill.Location = new System.Drawing.Point(0, 0);
+               this.gctBill.MainView = this.gridView1;
+               this.gctBill.Name = "gctBill";
+               this.gctBill.Size = new System.Drawing.Size(780, 537);
+               this.gctBill.TabIndex = 0;
+               this.gctBill.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+               // 
+               // gridView1
+               // 
+               this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.ItemName,
+            this.Price,
+            this.NumOfItem,
+            this.TotalPriceOfItem,
+            this.itemId});
+               this.gridView1.GridControl = this.gctBill;
+               this.gridView1.Name = "gridView1";
+               // 
+               // ItemName
+               // 
+               this.ItemName.Caption = "Tên mặt hàng";
+               this.ItemName.FieldName = "ItemName";
+               this.ItemName.MinWidth = 25;
+               this.ItemName.Name = "ItemName";
+               this.ItemName.Visible = true;
+               this.ItemName.VisibleIndex = 1;
+               this.ItemName.Width = 94;
+               // 
+               // Price
+               // 
+               this.Price.Caption = "Giá (VNĐ)";
+               this.Price.FieldName = "price";
+               this.Price.MinWidth = 25;
+               this.Price.Name = "Price";
+               this.Price.Visible = true;
+               this.Price.VisibleIndex = 2;
+               this.Price.Width = 94;
+               // 
+               // NumOfItem
+               // 
+               this.NumOfItem.Caption = "Só lượng (gói)";
+               this.NumOfItem.FieldName = "numOfItem";
+               this.NumOfItem.MinWidth = 25;
+               this.NumOfItem.Name = "NumOfItem";
+               this.NumOfItem.Visible = true;
+               this.NumOfItem.VisibleIndex = 3;
+               this.NumOfItem.Width = 94;
+               // 
+               // TotalPriceOfItem
+               // 
+               this.TotalPriceOfItem.Caption = "Tổng giá (VNĐ)";
+               this.TotalPriceOfItem.FieldName = "totalPriceOfItem";
+               this.TotalPriceOfItem.MinWidth = 25;
+               this.TotalPriceOfItem.Name = "TotalPriceOfItem";
+               this.TotalPriceOfItem.Visible = true;
+               this.TotalPriceOfItem.VisibleIndex = 4;
+               this.TotalPriceOfItem.Width = 94;
+               // 
+               // itemId
+               // 
+               this.itemId.Caption = "Mã mặt hàng";
+               this.itemId.FieldName = "itemId";
+               this.itemId.MinWidth = 25;
+               this.itemId.Name = "itemId";
+               this.itemId.Visible = true;
+               this.itemId.VisibleIndex = 0;
+               this.itemId.Width = 94;
                // 
                // panel3
                // 
@@ -427,105 +609,6 @@ namespace QuanLyKho
                this.panel9.Name = "panel9";
                this.panel9.Size = new System.Drawing.Size(685, 151);
                this.panel9.TabIndex = 65;
-               // 
-               // btnCancelBill
-               // 
-               this.btnCancelBill.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-               this.btnCancelBill.Appearance.Options.UseFont = true;
-               this.btnCancelBill.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-               this.btnCancelBill.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelBill.ImageOptions.Image")));
-               this.btnCancelBill.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-               this.btnCancelBill.Location = new System.Drawing.Point(381, 12);
-               this.btnCancelBill.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-               this.btnCancelBill.Name = "btnCancelBill";
-               this.btnCancelBill.Size = new System.Drawing.Size(141, 69);
-               this.btnCancelBill.TabIndex = 62;
-               this.btnCancelBill.Text = "Hủy";
-               // 
-               // btnPrintBill
-               // 
-               this.btnPrintBill.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-               this.btnPrintBill.Appearance.Options.UseFont = true;
-               this.btnPrintBill.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-               this.btnPrintBill.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnPrintBill.ImageOptions.Image")));
-               this.btnPrintBill.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-               this.btnPrintBill.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-               this.btnPrintBill.Location = new System.Drawing.Point(117, 9);
-               this.btnPrintBill.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-               this.btnPrintBill.Name = "btnPrintBill";
-               this.btnPrintBill.Size = new System.Drawing.Size(141, 69);
-               this.btnPrintBill.TabIndex = 61;
-               this.btnPrintBill.Text = "In hóa đơn";
-               // 
-               // btnSaveItem
-               // 
-               this.btnSaveItem.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-               this.btnSaveItem.Appearance.Options.UseFont = true;
-               this.btnSaveItem.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-               this.btnSaveItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSaveItem.ImageOptions.Image")));
-               this.btnSaveItem.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-               this.btnSaveItem.Location = new System.Drawing.Point(419, 171);
-               this.btnSaveItem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-               this.btnSaveItem.Name = "btnSaveItem";
-               this.btnSaveItem.Size = new System.Drawing.Size(112, 46);
-               this.btnSaveItem.TabIndex = 65;
-               this.btnSaveItem.Text = "Đồny ý";
-               // 
-               // btnCancelItem
-               // 
-               this.btnCancelItem.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-               this.btnCancelItem.Appearance.Options.UseFont = true;
-               this.btnCancelItem.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-               this.btnCancelItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelItem.ImageOptions.Image")));
-               this.btnCancelItem.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-               this.btnCancelItem.Location = new System.Drawing.Point(544, 172);
-               this.btnCancelItem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-               this.btnCancelItem.Name = "btnCancelItem";
-               this.btnCancelItem.Size = new System.Drawing.Size(112, 44);
-               this.btnCancelItem.TabIndex = 64;
-               this.btnCancelItem.Text = "Hủy";
-               // 
-               // btnDeleteItem
-               // 
-               this.btnDeleteItem.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-               this.btnDeleteItem.Appearance.Options.UseFont = true;
-               this.btnDeleteItem.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-               this.btnDeleteItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteItem.ImageOptions.Image")));
-               this.btnDeleteItem.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-               this.btnDeleteItem.Location = new System.Drawing.Point(292, 172);
-               this.btnDeleteItem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-               this.btnDeleteItem.Name = "btnDeleteItem";
-               this.btnDeleteItem.Size = new System.Drawing.Size(112, 44);
-               this.btnDeleteItem.TabIndex = 61;
-               this.btnDeleteItem.Text = "Xóa";
-               // 
-               // btnEditItem
-               // 
-               this.btnEditItem.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-               this.btnEditItem.Appearance.Options.UseFont = true;
-               this.btnEditItem.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-               this.btnEditItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnEditItem.ImageOptions.Image")));
-               this.btnEditItem.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-               this.btnEditItem.Location = new System.Drawing.Point(164, 172);
-               this.btnEditItem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-               this.btnEditItem.Name = "btnEditItem";
-               this.btnEditItem.Size = new System.Drawing.Size(112, 44);
-               this.btnEditItem.TabIndex = 62;
-               this.btnEditItem.Text = "Sửa";
-               // 
-               // btnAddItem
-               // 
-               this.btnAddItem.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-               this.btnAddItem.Appearance.Options.UseFont = true;
-               this.btnAddItem.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-               this.btnAddItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAddItem.ImageOptions.Image")));
-               this.btnAddItem.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-               this.btnAddItem.Location = new System.Drawing.Point(35, 172);
-               this.btnAddItem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-               this.btnAddItem.Name = "btnAddItem";
-               this.btnAddItem.Size = new System.Drawing.Size(112, 44);
-               this.btnAddItem.TabIndex = 60;
-               this.btnAddItem.Text = "Thêm";
                // 
                // btnCancelCustomer
                // 
@@ -562,7 +645,8 @@ namespace QuanLyKho
                this.ClientSize = new System.Drawing.Size(1598, 910);
                this.Controls.Add(this.panel1);
                this.Name = "Issue_Vou";
-               this.Text = "Issue_Vou";
+               this.Text = "Phiếu Xuất";
+               this.Load += new System.EventHandler(this.Issue_Vou_Load);
                ((System.ComponentModel.ISupportInitialize)(this.nudNumOfItem)).EndInit();
                this.panel10.ResumeLayout(false);
                this.panel10.PerformLayout();
@@ -573,6 +657,9 @@ namespace QuanLyKho
                this.panel5.ResumeLayout(false);
                this.panel5.PerformLayout();
                this.panel4.ResumeLayout(false);
+               this.panel8.ResumeLayout(false);
+               ((System.ComponentModel.ISupportInitialize)(this.gctBill)).EndInit();
+               ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
                this.panel3.ResumeLayout(false);
                this.panel9.ResumeLayout(false);
                this.panel9.PerformLayout();
@@ -624,5 +711,12 @@ namespace QuanLyKho
           private System.Windows.Forms.Panel panel8;
           private System.Windows.Forms.Panel panel3;
           private System.Windows.Forms.Panel panel9;
+          private DevExpress.XtraGrid.GridControl gctBill;
+          private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+          private DevExpress.XtraGrid.Columns.GridColumn ItemName;
+          private DevExpress.XtraGrid.Columns.GridColumn Price;
+          private DevExpress.XtraGrid.Columns.GridColumn NumOfItem;
+          private DevExpress.XtraGrid.Columns.GridColumn TotalPriceOfItem;
+          private DevExpress.XtraGrid.Columns.GridColumn itemId;
      }
 }

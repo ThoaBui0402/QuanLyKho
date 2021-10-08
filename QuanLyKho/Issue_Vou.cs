@@ -17,5 +17,10 @@ namespace QuanLyKho
           {
                InitializeComponent();
           }
+
+          private void Issue_Vou_Load(object sender, EventArgs e)
+          {
+
+          }
      }
 }
