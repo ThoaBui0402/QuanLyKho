@@ -1,0 +1,26 @@
+﻿using DevExpress.XtraEditors;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace QuanLyKho
+{
+     public partial class Issue_Vou : DevExpress.XtraEditors.XtraForm
+     {
+          public Issue_Vou()
+          {
+               InitializeComponent();
+          }
+
+          private void Issue_Vou_Load(object sender, EventArgs e)
+          {
+
+          }
+     }
+}
