@@ -82,6 +82,8 @@ namespace QuanLyKho
             this.rbpHelp = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.xtmm = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             this.popupMenu2 = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtmm)).BeginInit();
@@ -150,10 +152,10 @@ namespace QuanLyKho
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.rbpSystem,
             this.rbpManage,
-            this.rbpHelp});
+            this.rbpHelp,
+            this.ribbonPage1});
             this.ribbonControl1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2010;
             this.ribbonControl1.Size = new System.Drawing.Size(1225, 209);
-            //this.ribbonControl1.Click += new System.EventHandler(this.ribbonControl1_Click);
             // 
             // btnLogin
             // 
@@ -451,6 +453,7 @@ namespace QuanLyKho
             this.qlmh.ImageOptions.Image = global::QuanLyKho.Properties.Resources.bosaleitem_16x16;
             this.qlmh.ImageOptions.LargeImage = global::QuanLyKho.Properties.Resources.bosaleitem_32x32;
             this.qlmh.Name = "qlmh";
+            this.qlmh.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.qlmh_ItemClick);
             // 
             // qlkh
             // 
@@ -553,6 +556,18 @@ namespace QuanLyKho
             this.popupMenu2.Name = "popupMenu2";
             this.popupMenu2.Ribbon = this.ribbonControl1;
             // 
+            // ribbonPage1
+            // 
+            this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup2});
+            this.ribbonPage1.Name = "ribbonPage1";
+            this.ribbonPage1.Text = "ribbonPage1";
+            // 
+            // ribbonPageGroup2
+            // 
+            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
+            this.ribbonPageGroup2.Text = "ribbonPageGroup2";
+            // 
             // FormMain
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
@@ -631,5 +646,7 @@ namespace QuanLyKho
         private DevExpress.XtraBars.BarButtonItem tonkho;
         private DevExpress.XtraBars.BarButtonItem dspn;
         private DevExpress.XtraBars.BarButtonItem dspx;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
     }
 }

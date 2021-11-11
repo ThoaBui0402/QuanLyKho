@@ -48,11 +48,11 @@ namespace QuanLyKho
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.btnChangeInfo = new DevExpress.XtraEditors.SimpleButton();
             this.btnSave = new DevExpress.XtraEditors.SimpleButton();
             this.btnCancel = new DevExpress.XtraEditors.SimpleButton();
             this.btnChangePass = new DevExpress.XtraEditors.SimpleButton();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -243,16 +243,6 @@ namespace QuanLyKho
             this.panel2.Size = new System.Drawing.Size(835, 340);
             this.panel2.TabIndex = 18;
             // 
-            // panel1
-            // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Location = new System.Drawing.Point(106, 44);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(941, 469);
-            this.panel1.TabIndex = 1;
-            // 
             // btnChangeInfo
             // 
             this.btnChangeInfo.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -308,6 +298,16 @@ namespace QuanLyKho
             this.btnChangePass.TabIndex = 13;
             this.btnChangePass.Text = "Đổi mật khẩu";
             this.btnChangePass.Click += new System.EventHandler(this.btnChangePass_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Location = new System.Drawing.Point(106, 44);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(941, 469);
+            this.panel1.TabIndex = 1;
             // 
             // ThongTinTK
             // 

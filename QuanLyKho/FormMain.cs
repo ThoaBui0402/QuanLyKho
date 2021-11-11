@@ -137,6 +137,10 @@ namespace QuanLyKho
                 Application.Exit();
         }
 
-       
+        private void qlmh_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            frmMathang frm = new frmMathang();
+            showFormChild(frm);
+        }
     }
 }
