@@ -256,7 +256,7 @@
             // tbPriceIn
             // 
             this.tbPriceIn.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbPriceIn.Location = new System.Drawing.Point(143, 0);
+            this.tbPriceIn.Location = new System.Drawing.Point(140, 3);
             this.tbPriceIn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbPriceIn.Name = "tbPriceIn";
             this.tbPriceIn.Size = new System.Drawing.Size(121, 27);
@@ -356,7 +356,7 @@
             this.btnAddNew.Location = new System.Drawing.Point(16, 15);
             this.btnAddNew.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAddNew.Name = "btnAddNew";
-            this.btnAddNew.Size = new System.Drawing.Size(121, 48);
+            this.btnAddNew.Size = new System.Drawing.Size(126, 48);
             this.btnAddNew.TabIndex = 81;
             this.btnAddNew.Text = "Thêm mới";
             this.btnAddNew.Click += new System.EventHandler(this.btnAddNew_Click);
@@ -368,10 +368,10 @@
             this.btnAdd.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
             this.btnAdd.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.ImageOptions.Image")));
             this.btnAdd.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.btnAdd.Location = new System.Drawing.Point(177, 15);
+            this.btnAdd.Location = new System.Drawing.Point(148, 15);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(103, 48);
+            this.btnAdd.Size = new System.Drawing.Size(124, 48);
             this.btnAdd.TabIndex = 78;
             this.btnAdd.Text = "Thêm";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
@@ -386,7 +386,7 @@
             this.btnCancel.Location = new System.Drawing.Point(19, 86);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(121, 48);
+            this.btnCancel.Size = new System.Drawing.Size(123, 48);
             this.btnCancel.TabIndex = 76;
             this.btnCancel.Text = "Hủy";
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
@@ -398,10 +398,10 @@
             this.btnSave.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
             this.btnSave.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.ImageOptions.Image")));
             this.btnSave.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.btnSave.Location = new System.Drawing.Point(177, 86);
+            this.btnSave.Location = new System.Drawing.Point(148, 86);
             this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(103, 48);
+            this.btnSave.Size = new System.Drawing.Size(126, 48);
             this.btnSave.TabIndex = 77;
             this.btnSave.Text = "Lưu";
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
