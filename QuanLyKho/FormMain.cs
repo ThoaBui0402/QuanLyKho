@@ -137,6 +137,16 @@ namespace QuanLyKho
                 Application.Exit();
         }
 
-       
+        private void qlmh_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Item_Store item = new Item_Store();
+            item.init(typeOfEmployees, idEmployees);
+            item.ShowDialog();
+        }
+
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

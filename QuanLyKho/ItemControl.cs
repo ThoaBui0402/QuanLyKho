@@ -24,7 +24,7 @@ namespace QuanLyKho
                 instance = value;
             }
         }
-        private ItemControl() { }
+        public ItemControl() { }
        
         public DataTable DataSource_GetItem()
         {

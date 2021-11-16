@@ -153,7 +153,6 @@ namespace QuanLyKho
             this.rbpHelp});
             this.ribbonControl1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2010;
             this.ribbonControl1.Size = new System.Drawing.Size(1225, 209);
-            //this.ribbonControl1.Click += new System.EventHandler(this.ribbonControl1_Click);
             // 
             // btnLogin
             // 
@@ -451,6 +450,7 @@ namespace QuanLyKho
             this.qlmh.ImageOptions.Image = global::QuanLyKho.Properties.Resources.bosaleitem_16x16;
             this.qlmh.ImageOptions.LargeImage = global::QuanLyKho.Properties.Resources.bosaleitem_32x32;
             this.qlmh.Name = "qlmh";
+            this.qlmh.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.qlmh_ItemClick);
             // 
             // qlkh
             // 
@@ -569,6 +569,7 @@ namespace QuanLyKho
             this.Ribbon = this.ribbonControl1;
             this.Text = "Phần mềm quản lý";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FormMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtmm)).EndInit();
