@@ -378,7 +378,7 @@ namespace QuanLyKho
                // 
                this.xrLabel11.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                this.xrLabel11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-               this.xrLabel11.LocationFloat = new DevExpress.Utils.PointFloat(182.5F, 89.66665F);
+               this.xrLabel11.LocationFloat = new DevExpress.Utils.PointFloat(199.1667F, 89.66665F);
                this.xrLabel11.Multiline = true;
                this.xrLabel11.Name = "xrLabel11";
                this.xrLabel11.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
