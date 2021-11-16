@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using QuanLyKho;
-
 namespace QuanLyKho
 {
     public partial class Print : DevExpress.XtraEditors.XtraForm

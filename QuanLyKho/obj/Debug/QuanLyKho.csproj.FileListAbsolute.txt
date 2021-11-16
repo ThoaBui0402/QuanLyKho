@@ -344,3 +344,4 @@ D:\TT_Nhom\CloneGit\QuanLyKho_Clone\QuanLyKho\bin\Debug\es\DevExpress.Diagram.v1
 D:\TT_Nhom\CloneGit\QuanLyKho_Clone\QuanLyKho\bin\Debug\ja\DevExpress.Diagram.v19.2.Core.resources.dll
 D:\TT_Nhom\CloneGit\QuanLyKho_Clone\QuanLyKho\bin\Debug\ru\DevExpress.Diagram.v19.2.Core.resources.dll
 D:\TT_Nhom\CloneGit\QuanLyKho_Clone\QuanLyKho\obj\Debug\QuanLyKho.csproj.CopyComplete
+D:\TT_Nhom\CloneGit\QuanLyKho_Clone\QuanLyKho\obj\Debug\QuanLyKho.Bill1.resources
