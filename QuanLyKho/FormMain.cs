@@ -148,5 +148,17 @@ namespace QuanLyKho
         {
 
         }
+
+        private void hdthemmh_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            helpThemMH hp = new helpThemMH();
+            hp.Show();
+        }
+
+        private void bntdndx_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            helpDN_DX hp = new helpDN_DX();
+            hp.Show();
+        }
     }
 }

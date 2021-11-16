@@ -100,7 +100,7 @@
             this.tbPassWord.Name = "tbPassWord";
             this.tbPassWord.Size = new System.Drawing.Size(278, 27);
             this.tbPassWord.TabIndex = 3;
-            this.tbPassWord.Text = "1";
+            this.tbPassWord.Text = "0";
             this.tbPassWord.UseSystemPasswordChar = true;
             // 
             // label2
@@ -121,7 +121,7 @@
             this.tbUserName.Name = "tbUserName";
             this.tbUserName.Size = new System.Drawing.Size(278, 27);
             this.tbUserName.TabIndex = 1;
-            this.tbUserName.Text = "HUNG";
+            this.tbUserName.Text = "MAI";
             // 
             // label1
             // 
@@ -143,6 +143,7 @@
             this.IconOptions.LargeImage = global::QuanLyKho.Properties.Resources.bouser_32x321;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "LOGIN";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LOGIN";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.LOGIN_FormClosing);
             this.Load += new System.EventHandler(this.LOGIN_Load);
