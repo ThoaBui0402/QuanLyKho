@@ -122,8 +122,20 @@
     <Compile Include="Item_Store.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Item_Store.designer.cs">
+    <Compile Include="Item_Store.Designer.cs">
       <DependentUpon>Item_Store.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListIssue_Vou.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListIssue_Vou.Designer.cs">
+      <DependentUpon>ListIssue_Vou.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListReceipt_Vou.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListReceipt_Vou.Designer.cs">
+      <DependentUpon>ListReceipt_Vou.cs</DependentUpon>
     </Compile>
     <Compile Include="LOGIN.cs">
       <SubType>Form</SubType>
@@ -167,6 +179,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Item_Store.resx">
       <DependentUpon>Item_Store.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListIssue_Vou.resx">
+      <DependentUpon>ListIssue_Vou.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListReceipt_Vou.resx">
+      <DependentUpon>ListReceipt_Vou.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LOGIN.resx">
       <DependentUpon>LOGIN.cs</DependentUpon>

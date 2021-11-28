@@ -490,6 +490,7 @@ namespace QuanLyKho
             this.tonkho.Id = 53;
             this.tonkho.ImageOptions.SvgImage = global::QuanLyKho.Properties.Resources.buynow;
             this.tonkho.Name = "tonkho";
+            this.tonkho.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.tonkho_ItemClick);
             // 
             // dspn
             // 
@@ -498,6 +499,7 @@ namespace QuanLyKho
             this.dspn.ImageOptions.Image = global::QuanLyKho.Properties.Resources.gotopreviousheaderfooter_16x16;
             this.dspn.ImageOptions.LargeImage = global::QuanLyKho.Properties.Resources.gotopreviousheaderfooter_32x32;
             this.dspn.Name = "dspn";
+            this.dspn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.dspn_ItemClick);
             // 
             // dspx
             // 
@@ -506,6 +508,7 @@ namespace QuanLyKho
             this.dspx.ImageOptions.Image = global::QuanLyKho.Properties.Resources.gotonextheaderfooter_16x16;
             this.dspx.ImageOptions.LargeImage = global::QuanLyKho.Properties.Resources.gotonextheaderfooter_32x32;
             this.dspx.Name = "dspx";
+            this.dspx.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.dspx_ItemClick);
             // 
             // barButtonItem9
             // 
@@ -519,7 +522,7 @@ namespace QuanLyKho
             // 
             this.hdthemmh.Caption = "Hướng dẫn thêm mặt hàng";
             this.hdthemmh.Id = 57;
-            this.hdthemmh.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem10.ImageOptions.SvgImage")));
+            this.hdthemmh.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("hdthemmh.ImageOptions.SvgImage")));
             this.hdthemmh.Name = "hdthemmh";
             this.hdthemmh.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.hdthemmh_ItemClick);
             // 
@@ -543,8 +546,8 @@ namespace QuanLyKho
             // 
             this.bntdndx.Caption = "Hướng dãn đăng nhập/Đăng xuất";
             this.bntdndx.Id = 60;
-            this.bntdndx.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem13.ImageOptions.Image")));
-            this.bntdndx.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem13.ImageOptions.LargeImage")));
+            this.bntdndx.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("bntdndx.ImageOptions.Image")));
+            this.bntdndx.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("bntdndx.ImageOptions.LargeImage")));
             this.bntdndx.Name = "bntdndx";
             this.bntdndx.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bntdndx_ItemClick);
             // 
