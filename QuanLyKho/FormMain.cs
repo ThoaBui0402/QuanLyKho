@@ -160,5 +160,22 @@ namespace QuanLyKho
             helpDN_DX hp = new helpDN_DX();
             hp.Show();
         }
+
+        private void tonkho_ItemClick(object sender, ItemClickEventArgs e)
+        {
+
+        }
+
+        private void dspn_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            ListIssue_Vou h = new ListIssue_Vou();
+            h.Show();
+        }
+
+        private void dspx_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            ListReceipt_Vou k = new ListReceipt_Vou();
+            k.Show();
+        }
     }
 }

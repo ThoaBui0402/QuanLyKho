@@ -1,14 +1,13 @@
-﻿using System;
+﻿using DevExpress.XtraEditors;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Text;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DevExpress.XtraEditors;
-using QuanLyKho;
 
 namespace QuanLyKho
 {
@@ -19,7 +18,7 @@ namespace QuanLyKho
         private int action = 1;
         public Item_Store()
         {
-             InitializeComponent();
+            InitializeComponent();
         }
 
         private void Item_Store_Load(object sender, EventArgs e)
@@ -27,14 +26,13 @@ namespace QuanLyKho
             readOnly(true);
             EnabledBtn(true);
             load();
-           // binding();
+            binding();
         }
-
         public void init(int _staff, int _idEmployees)
         {
             staff = _staff;
             idEmployees = _idEmployees;
-            
+
         }
         private void clear()
         {
@@ -44,7 +42,7 @@ namespace QuanLyKho
             tbPriceIn.Clear();
             nudStored.Value = 0;
         }
-      
+
         private void readOnly(bool e)
         {
             tbItemID.ReadOnly = e;
@@ -62,13 +60,11 @@ namespace QuanLyKho
         }
         private void load()
         {
-            ItemControl it = new ItemControl();
             if (staff == 1)//là nhân viên
             {
                 try
                 {
-                    gctListItem.DataSource = it.DataSource_GetItem();
-                    
+                    gctListItem.DataSource = ItemControl.Instance.DataSource_GetItem();
                 }
                 catch { }
                 pnlBtn.Hide();
@@ -84,7 +80,7 @@ namespace QuanLyKho
                 catch { }
                 readOnly(true);
             }
-         
+
         }
         private void binding()
         {
@@ -102,7 +98,7 @@ namespace QuanLyKho
                 tbPriceIn.DataBindings.Add("Text", gctListItem.DataSource, "Giá hàng");
             }
             catch { }
-        } 
+        }
 
         private void btnAddNew_Click(object sender, EventArgs e)
         {
@@ -126,22 +122,6 @@ namespace QuanLyKho
             clear();
         }
 
-        private void btnEdit_Click(object sender, EventArgs e)
-        {
-            action = 2;
-            EnabledBtn(false);
-            readOnly(false);
-            tbPriceIn.ReadOnly = true;
-            tbItemID.ReadOnly = true;
-        }
-
-        private void btnDelete_Click(object sender, EventArgs e)
-        {
-            action = 3;
-            EnabledBtn(false);
-            readOnly(false);
-        }
-
         private void btnCancel_Click(object sender, EventArgs e)
         {
             DialogResult dr = MessageBox.Show("Bạn thực sự muốn hủy?", "Xác nhận", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
@@ -155,7 +135,7 @@ namespace QuanLyKho
         {
             btnCancel.Enabled = false;
             btnSave.Enabled = false;
-            string itemName="";
+            string itemName = "";
             string once = "";
             int priceIn = 0;
             int numOfStored = 0;
@@ -170,12 +150,12 @@ namespace QuanLyKho
             catch
             {
                 MessageBox.Show("Vui lòng kiểm tra lại thông tin mặt hàng nhập vào!");
-                
+
             }
 
             if (action == 0)//them moi thi can nhap Ma cua mat hang vao, tu no se update ma quay la quay hien tai
             {
-               
+
                 try
                 {
                     ItemControl.Instance.InsertItem(itemName, numOfStored, once, priceIn);
@@ -196,6 +176,7 @@ namespace QuanLyKho
             }
             Item_Store_Load(sender, e);
         }
+
         private void tbItemID_TextChanged(object sender, EventArgs e)
         {
             tbItemName.Clear();
@@ -203,16 +184,15 @@ namespace QuanLyKho
             tbOnce.Clear();
             try
             {
-                DataTable dt = ItemControl.Instance.DataSource_GetItemByIdItem(Convert.ToInt32( tbItemID.Text.Trim(' ')));
+                DataTable dt = ItemControl.Instance.DataSource_GetItemByIdItem(Convert.ToInt32(tbItemID.Text.Trim(' ')));
                 tbItemName.Text = dt.Rows[0]["Tên"].ToString();
                 tbOnce.Text = dt.Rows[0]["Đơn vị"].ToString();
                 tbPriceIn.Text = dt.Rows[0]["Giá hàng"].ToString();
             }
             catch { }
         }
-
         private void GetItemInfo()
-        {  
+        {
             //string _id = tbItemID.Text.Trim(' ');
             try
             {
@@ -226,127 +206,8 @@ namespace QuanLyKho
             {
 
             }
-            
-        }
-
-        private void pnlBtn_Paint(object sender, PaintEventArgs e)
-        {
 
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel6_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label15_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dtpkDayOfBill_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel8_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label16_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void gctListItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel7_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pnlTb_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void nudStored_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pnlPriceIn_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tbPriceIn_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label14_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbNumber_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tbOnce_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label11_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label13_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tbItemName_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel5_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
