@@ -137,6 +137,25 @@ namespace QuanLyKho
                 Application.Exit();
         }
 
-       
+        private void barButtonItem2_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Receipt_Vou info = new Receipt_Vou();
+            info.InitData(NameEmployees, idEmployees);
+            showFormChild(info);
+        }
+
+        private void tonkho_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Inventory info = new Inventory();
+            showFormChild(info);
+        }
+
+        private void barButtonItem8_ItemClick(object sender, ItemClickEventArgs e)
+        {
+
+            Item_Store info = new Item_Store();
+            info.init(typeOfEmployees, idEmployees);
+            showFormChild(info);
+        }
     }
 }
