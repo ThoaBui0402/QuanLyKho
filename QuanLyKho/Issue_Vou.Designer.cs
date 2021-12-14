@@ -251,9 +251,9 @@
                // label3
                // 
                this.label3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-               this.label3.Location = new System.Drawing.Point(301, 81);
+               this.label3.Location = new System.Drawing.Point(301, 76);
                this.label3.Name = "label3";
-               this.label3.Size = new System.Drawing.Size(250, 28);
+               this.label3.Size = new System.Drawing.Size(283, 43);
                this.label3.TabIndex = 58;
                this.label3.Text = "Thông tin phiếu xuất kho";
                // 
@@ -269,9 +269,6 @@
                // gctBill
                // 
                this.gctBill.Dock = System.Windows.Forms.DockStyle.Fill;
-               // 
-               // 
-               // 
                this.gctBill.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
                this.gctBill.Location = new System.Drawing.Point(0, 0);
                this.gctBill.MainView = this.dgvIssue_Vou;
@@ -660,7 +657,7 @@
                this.Controls.Add(this.panel1);
                this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
                this.Name = "Issue_Vou";
-               this.Text = "Thêm hóa đơn";
+               this.Text = "Thông tin hóa đơn";
                this.Load += new System.EventHandler(this.Issue_Vou_Load);
                this.panel1.ResumeLayout(false);
                this.panel2.ResumeLayout(false);
