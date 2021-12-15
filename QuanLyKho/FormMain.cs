@@ -236,5 +236,24 @@ namespace QuanLyKho
             Supplier_Store info = new Supplier_Store();
             showFormChild(info);
         }
+
+        private void qlnv_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Employees_Store info = new Employees_Store();
+            showFormChild(info);
+        }
+
+        private void barButtonItem11_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Help_phieu info = new Help_phieu();
+            showFormChild(info);
+
+        }
+
+        private void barButtonItem12_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Help_NhanVien info = new Help_NhanVien();
+            showFormChild(info);
+        }
     }
 }
