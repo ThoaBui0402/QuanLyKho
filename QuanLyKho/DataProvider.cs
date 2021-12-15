@@ -10,6 +10,7 @@ namespace QuanLyKho
 {
     class DataProvider
     {
+
         private string connectString = (@"Data Source=localhost\SQLEXPRESS01;Initial Catalog=QLK;Integrated Security=True");
         private static DataProvider instances;
         /*1*/

@@ -84,7 +84,7 @@ namespace QuanLyKho
             this.rpgAcount = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rbpManage = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.rpgEmployees = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.rpgStock = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rbpHelp = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -586,7 +586,7 @@ namespace QuanLyKho
             // 
             this.rbpManage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.rpgEmployees,
-            this.ribbonPageGroup1});
+            this.rpgStock});
             this.rbpManage.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("rbpManage.ImageOptions.Image")));
             this.rbpManage.Name = "rbpManage";
             this.rbpManage.Text = "Quản lý";
@@ -599,17 +599,17 @@ namespace QuanLyKho
             this.rpgEmployees.Name = "rpgEmployees";
             this.rpgEmployees.Text = "Quản lý của nhân viên";
             // 
-            // ribbonPageGroup1
+            // rpgStock
             // 
-            this.ribbonPageGroup1.ItemLinks.Add(this.qlnv);
-            this.ribbonPageGroup1.ItemLinks.Add(this.qlmh);
-            this.ribbonPageGroup1.ItemLinks.Add(this.qlkh);
-            this.ribbonPageGroup1.ItemLinks.Add(this.qlncc);
-            this.ribbonPageGroup1.ItemLinks.Add(this.tonkho);
-            this.ribbonPageGroup1.ItemLinks.Add(this.dspn);
-            this.ribbonPageGroup1.ItemLinks.Add(this.dspx);
-            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.Text = "Quản lý kho";
+            this.rpgStock.ItemLinks.Add(this.qlnv);
+            this.rpgStock.ItemLinks.Add(this.qlmh);
+            this.rpgStock.ItemLinks.Add(this.qlkh);
+            this.rpgStock.ItemLinks.Add(this.qlncc);
+            this.rpgStock.ItemLinks.Add(this.tonkho);
+            this.rpgStock.ItemLinks.Add(this.dspn);
+            this.rpgStock.ItemLinks.Add(this.dspx);
+            this.rpgStock.Name = "rpgStock";
+            this.rpgStock.Text = "Quản lý kho";
             // 
             // rbpHelp
             // 
@@ -725,7 +725,7 @@ namespace QuanLyKho
         private DevExpress.XtraBars.BarButtonItem barButtonItem7;
         private DevExpress.XtraBars.BarButtonItem barButtonItem8;
         private DevExpress.XtraBars.BarButtonItem qlnv;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup rpgStock;
         private DevExpress.XtraBars.BarButtonItem qlmh;
         private DevExpress.XtraBars.BarButtonItem qlkh;
         private DevExpress.XtraBars.BarButtonItem qlncc;

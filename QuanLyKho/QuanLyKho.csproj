@@ -92,6 +92,12 @@
     <Compile Include="ChangePassControl.cs" />
     <Compile Include="ChitietPN.cs" />
     <Compile Include="CustomerControl.cs" />
+    <Compile Include="Customer_Store.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_Store.Designer.cs">
+      <DependentUpon>Customer_Store.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataProvider.cs" />
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
@@ -161,6 +167,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReceiptVouControl.cs" />
     <Compile Include="SupplierControl.cs" />
+    <Compile Include="Supplier_Store.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplier_Store.Designer.cs">
+      <DependentUpon>Supplier_Store.cs</DependentUpon>
+    </Compile>
     <Compile Include="ThongTinTK.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,6 +184,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChangePass.resx">
       <DependentUpon>ChangePass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_Store.resx">
+      <DependentUpon>Customer_Store.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
@@ -214,6 +229,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Supplier_Store.resx">
+      <DependentUpon>Supplier_Store.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ThongTinTK.resx">
       <DependentUpon>ThongTinTK.cs</DependentUpon>
     </EmbeddedResource>

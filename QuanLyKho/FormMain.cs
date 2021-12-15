@@ -88,7 +88,7 @@ namespace QuanLyKho
         private void VisibleRpg(bool e)
         {
             rpgEmployees.Visible = e;
-            ribbonPageGroup1.Visible = e;
+            rpgStock.Visible = e;
 
         }
         private void EnabledBtn(bool e)
@@ -104,7 +104,7 @@ namespace QuanLyKho
 
             if (_type == 0)
             {
-                ribbonPageGroup1.Visible = true;
+                rpgStock.Visible = true;
 
             }
             if (_type == 1)
@@ -173,7 +173,7 @@ namespace QuanLyKho
 
         private void FormMain_Load(object sender, EventArgs e)
         {
-
+            load(typeOfEmployees);
         }
 
         private void hdthemmh_ItemClick(object sender, ItemClickEventArgs e)
@@ -215,7 +215,7 @@ namespace QuanLyKho
 
         private void ribbonControl1_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+          //  Application.Exit();
         }
 
         private void barButtonItem8_ItemClick(object sender, ItemClickEventArgs e)
