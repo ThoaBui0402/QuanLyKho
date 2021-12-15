@@ -72,5 +72,11 @@ namespace QuanLyKho
             string query = @"exec SP_deleteBill @billId";
             return DataProvider.Instances.ExecuteNonQuery(query, new object[] { _billId });
         }
-    }
+          public DataTable GetBillbyDate(string date)
+          {
+               string query = @"select SOPX as'Số phiếu xuất', NGAYXUAT as 'Ngày xuất',NGUOINHAN AS 'Người nhận', PX.TONGTIEN as 'Tổng tiền', PX.MANV as 'Mã nhân viên', nv.TENNV as 'Tên nhân viên', PX.MAKH as 'Mã khách hàng', kh.TENKH as 'Tên khách hàng' from PHIEUXUAT PX,  NHANVIEN nv, KHACHHANG kh where PX.MANV=NV.MANV and PX.MAKH=kh.MAKH and NGAYXUAT= '2018-01-01'";
+               return DataProvider.Instances.ExecuteQuery(query, new object[] { });
+
+          }
+     }
 }

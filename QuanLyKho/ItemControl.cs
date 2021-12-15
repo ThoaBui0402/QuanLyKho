@@ -51,6 +51,6 @@ namespace QuanLyKho
             string query = @"exec SP_updateItem @itemName, @numberOfStored";
             return DataProvider.Instances.ExecuteNonQuery(query, new object[] { _itemName, _numberOfStored });
         }
-
-    }
+         
+     }
 }

@@ -81,5 +81,7 @@ namespace QuanLyKho
             dgvBillDetail.DataSource = ReceiptVouControl.Instance.DataSource_GetDetailBillByID(numOfBill);
         
     }
-    }
+
+          
+     }
 }

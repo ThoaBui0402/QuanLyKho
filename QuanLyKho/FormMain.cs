@@ -168,14 +168,22 @@ namespace QuanLyKho
 
         private void dspn_ItemClick(object sender, ItemClickEventArgs e)
         {
-            ListIssue_Vou h = new ListIssue_Vou();
-            h.Show();
+               ListReceipt_Vou h = new ListReceipt_Vou();
+               h.Show();
         }
 
         private void dspx_ItemClick(object sender, ItemClickEventArgs e)
         {
-            ListReceipt_Vou k = new ListReceipt_Vou();
-            k.Show();
+            
+               ListIssue_Vou h = new ListIssue_Vou();
+               h.Show();
         }
-    }
+       
+          private void barButtonItem7_ItemClick(object sender, ItemClickEventArgs e)
+          {
+               Issue_Vou info = new Issue_Vou();
+               info.InitData(NameEmployees, idEmployees);
+               showFormChild(info);
+          }
+     }
 }

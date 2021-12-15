@@ -22,6 +22,7 @@ namespace QuanLyKho
         {
             load();
             binding();
+
         }
         private void load()
         {
@@ -79,6 +80,5 @@ namespace QuanLyKho
             int numOfBill = int.Parse(dgvBillView.GetFocusedRowCellValue("Số phiếu xuất").ToString());
             dgvBillDetail.DataSource = IssueVouControl.Instance.DataSource_GetDetailBillByID(numOfBill);
         }
-    
-    }
+     }
 }
