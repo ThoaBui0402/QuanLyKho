@@ -79,6 +79,10 @@ namespace QuanLyKho
             int numOfBill = int.Parse(dgvBillView.GetFocusedRowCellValue("Số phiếu xuất").ToString());
             dgvBillDetail.DataSource = IssueVouControl.Instance.DataSource_GetDetailBillByID(numOfBill);
         }
-    
+
+        private void dtpkDayOfIssue_Vou_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

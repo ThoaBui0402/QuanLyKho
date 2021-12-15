@@ -29,11 +29,8 @@ namespace QuanLyKho
 
         public DataTable DataSource_GetEmployeesByID(int id)
         {
-
-            DataTable dt = new DataTable();
             string query = @"exec SP_getEmployeesByID @id";
-            dt = DataProvider.Instances.ExecuteQuery(query, new object[] { id });
-            return dt;
+            return DataProvider.Instances.ExecuteQuery(query, new object[] { @id });
         }
         //string _id, DateTime _dateOfBirth, string _name=null, string _userName = null, string _pass = null,  bool _sex = true, float _salary = 0, string _telephoneNumber = null, string _type= null
         public int ChangeAcount(int _id, string _name, DateTime _dateOfBirth, int _sex, string _userName, string _country, string _telephoneNumber)

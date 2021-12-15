@@ -55,11 +55,11 @@ namespace QuanLyKho
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.dtpkDayOfIssue_Vou = new System.Windows.Forms.DateTimePicker();
-            this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.dgvListBill = new DevExpress.XtraGrid.GridControl();
             this.dgvBillView = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.label16 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBillDetailView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBillDetail)).BeginInit();
             this.panel4.SuspendLayout();
@@ -337,16 +337,7 @@ namespace QuanLyKho
             this.dtpkDayOfIssue_Vou.Name = "dtpkDayOfIssue_Vou";
             this.dtpkDayOfIssue_Vou.Size = new System.Drawing.Size(147, 27);
             this.dtpkDayOfIssue_Vou.TabIndex = 57;
-            // 
-            // label16
-            // 
-            this.label16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label16.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold);
-            this.label16.Location = new System.Drawing.Point(395, 69);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(172, 25);
-            this.label16.TabIndex = 56;
-            this.label16.Text = "Tìm kiếm theo ngày:";
+            this.dtpkDayOfIssue_Vou.ValueChanged += new System.EventHandler(this.dtpkDayOfIssue_Vou_ValueChanged);
             // 
             // label15
             // 
@@ -385,6 +376,16 @@ namespace QuanLyKho
             this.dgvBillView.Name = "dgvBillView";
             this.dgvBillView.OptionsBehavior.ReadOnly = true;
             this.dgvBillView.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.dgvBillView_FocusedRowChanged);
+            // 
+            // label16
+            // 
+            this.label16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label16.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold);
+            this.label16.Location = new System.Drawing.Point(395, 69);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(172, 25);
+            this.label16.TabIndex = 56;
+            this.label16.Text = "Tìm kiếm theo ngày:";
             // 
             // ListIssue_Vou
             // 
@@ -439,10 +440,10 @@ namespace QuanLyKho
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.DateTimePicker dtpkDayOfIssue_Vou;
-        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Panel panel8;
         private DevExpress.XtraGrid.GridControl dgvListBill;
         private DevExpress.XtraGrid.Views.Grid.GridView dgvBillView;
+        private System.Windows.Forms.Label label16;
     }
 }

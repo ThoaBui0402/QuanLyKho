@@ -209,5 +209,14 @@ namespace QuanLyKho
 
         }
 
+        private void dtpkDayOfBill_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gctListItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

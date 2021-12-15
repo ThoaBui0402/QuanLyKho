@@ -52,9 +52,7 @@ namespace QuanLyKho
             this.label1 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.dtpkDayOfBill = new System.Windows.Forms.DateTimePicker();
             this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.gctListItem = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -302,47 +300,26 @@ namespace QuanLyKho
             this.panel6.Location = new System.Drawing.Point(424, 11);
             this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(950, 703);
+            this.panel6.Size = new System.Drawing.Size(950, 735);
             this.panel6.TabIndex = 4;
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.dtpkDayOfBill);
             this.panel5.Controls.Add(this.label15);
-            this.panel5.Controls.Add(this.label16);
             this.panel5.Location = new System.Drawing.Point(51, 23);
             this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(892, 150);
+            this.panel5.Size = new System.Drawing.Size(892, 141);
             this.panel5.TabIndex = 63;
-            // 
-            // dtpkDayOfBill
-            // 
-            this.dtpkDayOfBill.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpkDayOfBill.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpkDayOfBill.Location = new System.Drawing.Point(681, 38);
-            this.dtpkDayOfBill.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtpkDayOfBill.Name = "dtpkDayOfBill";
-            this.dtpkDayOfBill.Size = new System.Drawing.Size(147, 27);
-            this.dtpkDayOfBill.TabIndex = 57;
             // 
             // label15
             // 
             this.label15.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(357, 106);
+            this.label15.Location = new System.Drawing.Point(327, 89);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(247, 28);
             this.label15.TabIndex = 18;
             this.label15.Text = "Danh sách mặt hàng";
-            // 
-            // label16
-            // 
-            this.label16.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold);
-            this.label16.Location = new System.Drawing.Point(510, 39);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(173, 26);
-            this.label16.TabIndex = 56;
-            this.label16.Text = "Tìm kiếm theo ngày:";
             // 
             // panel8
             // 
@@ -365,6 +342,7 @@ namespace QuanLyKho
             this.gctListItem.TabIndex = 0;
             this.gctListItem.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
+            this.gctListItem.Click += new System.EventHandler(this.gctListItem_Click);
             // 
             // gridView1
             // 
@@ -422,9 +400,7 @@ namespace QuanLyKho
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.DateTimePicker dtpkDayOfBill;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Panel panel8;
         private DevExpress.XtraGrid.GridControl gctListItem;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;

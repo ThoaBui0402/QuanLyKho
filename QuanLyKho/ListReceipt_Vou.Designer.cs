@@ -51,8 +51,6 @@ namespace QuanLyKho
             this.dgvBillDetail = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.dtpkDayOfReceipt_Vou = new System.Windows.Forms.DateTimePicker();
-            this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.dgvListBill = new DevExpress.XtraGrid.GridControl();
@@ -282,8 +280,6 @@ namespace QuanLyKho
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.dtpkDayOfReceipt_Vou);
-            this.panel6.Controls.Add(this.label16);
             this.panel6.Controls.Add(this.label15);
             this.panel6.Controls.Add(this.panel8);
             this.panel6.Location = new System.Drawing.Point(750, 11);
@@ -292,30 +288,10 @@ namespace QuanLyKho
             this.panel6.Size = new System.Drawing.Size(878, 703);
             this.panel6.TabIndex = 4;
             // 
-            // dtpkDayOfReceipt_Vou
-            // 
-            this.dtpkDayOfReceipt_Vou.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpkDayOfReceipt_Vou.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpkDayOfReceipt_Vou.Location = new System.Drawing.Point(582, 66);
-            this.dtpkDayOfReceipt_Vou.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtpkDayOfReceipt_Vou.Name = "dtpkDayOfReceipt_Vou";
-            this.dtpkDayOfReceipt_Vou.Size = new System.Drawing.Size(147, 27);
-            this.dtpkDayOfReceipt_Vou.TabIndex = 57;
-            // 
-            // label16
-            // 
-            this.label16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label16.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold);
-            this.label16.Location = new System.Drawing.Point(395, 69);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(172, 25);
-            this.label16.TabIndex = 56;
-            this.label16.Text = "Tìm kiếm theo ngày:";
-            // 
             // label15
             // 
             this.label15.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(275, 10);
+            this.label15.Location = new System.Drawing.Point(347, 88);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(247, 28);
             this.label15.TabIndex = 18;
@@ -397,8 +373,6 @@ namespace QuanLyKho
         private DevExpress.XtraGrid.GridControl dgvBillDetail;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.DateTimePicker dtpkDayOfReceipt_Vou;
-        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Panel panel8;
         private DevExpress.XtraGrid.GridControl dgvListBill;
