@@ -550,3 +550,4 @@ D:\Ky1nam4\TTN\github\QuanLyKho\QuanLyKho\bin\Debug\de\DevExpress.Persistent.Bas
 D:\Ky1nam4\TTN\github\QuanLyKho\QuanLyKho\bin\Debug\es\DevExpress.Persistent.Base.v19.2.resources.dll
 D:\Ky1nam4\TTN\github\QuanLyKho\QuanLyKho\bin\Debug\ja\DevExpress.Persistent.Base.v19.2.resources.dll
 D:\Ky1nam4\TTN\github\QuanLyKho\QuanLyKho\bin\Debug\ru\DevExpress.Persistent.Base.v19.2.resources.dll
+D:\Ky1nam4\TTN\github\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.PhieuNhap.resources

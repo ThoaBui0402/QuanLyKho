@@ -148,5 +148,14 @@ namespace QuanLyKho
         {
 
         }
+
+        private void barButtonItem2_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            PhieuNhap info = new PhieuNhap();
+           
+            info.InitData(NameEmployees, idEmployees);
+            showFormChild(info);
+
+        }
     }
 }
