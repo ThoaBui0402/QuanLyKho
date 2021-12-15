@@ -84,7 +84,7 @@ namespace QuanLyKho
             this.rpgAcount = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rbpManage = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.rpgEmployees = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.rpgStock = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rbpHelp = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -450,6 +450,7 @@ namespace QuanLyKho
             this.barButtonItem8.ImageOptions.Image = global::QuanLyKho.Properties.Resources.boorderitem_16x16;
             this.barButtonItem8.ImageOptions.LargeImage = global::QuanLyKho.Properties.Resources.boorderitem_32x32;
             this.barButtonItem8.Name = "barButtonItem8";
+            this.barButtonItem8.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem8_ItemClick);
             // 
             // qlnv
             // 
@@ -475,6 +476,7 @@ namespace QuanLyKho
             this.qlkh.ImageOptions.Image = global::QuanLyKho.Properties.Resources.team_16x16;
             this.qlkh.ImageOptions.LargeImage = global::QuanLyKho.Properties.Resources.team_32x32;
             this.qlkh.Name = "qlkh";
+            this.qlkh.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.qlkh_ItemClick);
             // 
             // qlncc
             // 
@@ -483,6 +485,7 @@ namespace QuanLyKho
             this.qlncc.ImageOptions.Image = global::QuanLyKho.Properties.Resources.bocustomer_16x161;
             this.qlncc.ImageOptions.LargeImage = global::QuanLyKho.Properties.Resources.bocustomer_32x321;
             this.qlncc.Name = "qlncc";
+            this.qlncc.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.qlncc_ItemClick);
             // 
             // tonkho
             // 
@@ -581,7 +584,7 @@ namespace QuanLyKho
             // 
             this.rbpManage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.rpgEmployees,
-            this.ribbonPageGroup1});
+            this.rpgStock});
             this.rbpManage.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("rbpManage.ImageOptions.Image")));
             this.rbpManage.Name = "rbpManage";
             this.rbpManage.Text = "Quản lý";
@@ -594,17 +597,17 @@ namespace QuanLyKho
             this.rpgEmployees.Name = "rpgEmployees";
             this.rpgEmployees.Text = "Quản lý của nhân viên";
             // 
-            // ribbonPageGroup1
+            // rpgStock
             // 
-            this.ribbonPageGroup1.ItemLinks.Add(this.qlnv);
-            this.ribbonPageGroup1.ItemLinks.Add(this.qlmh);
-            this.ribbonPageGroup1.ItemLinks.Add(this.qlkh);
-            this.ribbonPageGroup1.ItemLinks.Add(this.qlncc);
-            this.ribbonPageGroup1.ItemLinks.Add(this.tonkho);
-            this.ribbonPageGroup1.ItemLinks.Add(this.dspn);
-            this.ribbonPageGroup1.ItemLinks.Add(this.dspx);
-            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.Text = "Quản lý kho";
+            this.rpgStock.ItemLinks.Add(this.qlnv);
+            this.rpgStock.ItemLinks.Add(this.qlmh);
+            this.rpgStock.ItemLinks.Add(this.qlkh);
+            this.rpgStock.ItemLinks.Add(this.qlncc);
+            this.rpgStock.ItemLinks.Add(this.tonkho);
+            this.rpgStock.ItemLinks.Add(this.dspn);
+            this.rpgStock.ItemLinks.Add(this.dspx);
+            this.rpgStock.Name = "rpgStock";
+            this.rpgStock.Text = "Quản lý kho";
             // 
             // rbpHelp
             // 
@@ -720,7 +723,7 @@ namespace QuanLyKho
         private DevExpress.XtraBars.BarButtonItem barButtonItem7;
         private DevExpress.XtraBars.BarButtonItem barButtonItem8;
         private DevExpress.XtraBars.BarButtonItem qlnv;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup rpgStock;
         private DevExpress.XtraBars.BarButtonItem qlmh;
         private DevExpress.XtraBars.BarButtonItem qlkh;
         private DevExpress.XtraBars.BarButtonItem qlncc;
