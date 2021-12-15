@@ -177,5 +177,13 @@ namespace QuanLyKho
             ListReceipt_Vou k = new ListReceipt_Vou();
             k.Show();
         }
+
+        private void barButtonItem2_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            PhieuNhap info = new PhieuNhap();
+
+            info.InitData(NameEmployees, idEmployees);
+            showFormChild(info);
+        }
     }
 }

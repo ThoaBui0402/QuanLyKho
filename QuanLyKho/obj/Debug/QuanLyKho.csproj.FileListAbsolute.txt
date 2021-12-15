@@ -575,3 +575,6 @@ D:\ThucTapNhom\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.exe
 D:\ThucTapNhom\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.pdb
 D:\ThucTapNhom\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.ListIssue_Vou.resources
 D:\ThucTapNhom\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.ListReceipt_Vou.resources
+D:\Ky1nam4\TTN\github\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.ListIssue_Vou.resources
+D:\Ky1nam4\TTN\github\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.ListReceipt_Vou.resources
+D:\Ky1nam4\TTN\github\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.PhieuNhap.resources
