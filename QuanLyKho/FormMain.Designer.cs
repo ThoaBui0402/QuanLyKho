@@ -434,6 +434,7 @@ namespace QuanLyKho
             this.barButtonItem2.ImageOptions.Image = global::QuanLyKho.Properties.Resources.boreport_16x16;
             this.barButtonItem2.ImageOptions.LargeImage = global::QuanLyKho.Properties.Resources.boreport_32x32;
             this.barButtonItem2.Name = "barButtonItem2";
+            this.barButtonItem2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem2_ItemClick);
             // 
             // barButtonItem7
             // 
