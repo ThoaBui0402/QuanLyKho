@@ -792,3 +792,9 @@ D:\HK6\QLK1\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.csproj.CoreCompileInputs.cac
 D:\HK6\QLK1\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.csproj.CopyComplete
 D:\HK6\QLK1\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.exe
 D:\HK6\QLK1\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.pdb
+D:\ThucTapNhom\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.Customer_Store.resources
+D:\ThucTapNhom\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.PhieuNhap.resources
+D:\ThucTapNhom\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.Supplier_Store.resources
+D:\ThucTapNhom\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.Employees_Store.resources
+D:\ThucTapNhom\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.Help_NhanVien.resources
+D:\ThucTapNhom\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.Help_phieu.resources

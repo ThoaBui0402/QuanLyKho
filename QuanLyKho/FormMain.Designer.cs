@@ -461,6 +461,7 @@ namespace QuanLyKho
             this.qlnv.ImageOptions.Image = global::QuanLyKho.Properties.Resources.boemployee_16x16;
             this.qlnv.ImageOptions.LargeImage = global::QuanLyKho.Properties.Resources.boemployee_32x32;
             this.qlnv.Name = "qlnv";
+            this.qlnv.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.qlnv_ItemClick);
             // 
             // qlmh
             // 
@@ -538,6 +539,7 @@ namespace QuanLyKho
             this.barButtonItem11.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem11.ImageOptions.Image")));
             this.barButtonItem11.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem11.ImageOptions.LargeImage")));
             this.barButtonItem11.Name = "barButtonItem11";
+            this.barButtonItem11.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem11_ItemClick);
             // 
             // barButtonItem12
             // 
@@ -546,6 +548,7 @@ namespace QuanLyKho
             this.barButtonItem12.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem12.ImageOptions.Image")));
             this.barButtonItem12.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem12.ImageOptions.LargeImage")));
             this.barButtonItem12.Name = "barButtonItem12";
+            this.barButtonItem12.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem12_ItemClick);
             // 
             // bntdndx
             // 

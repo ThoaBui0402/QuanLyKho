@@ -99,6 +99,13 @@
       <DependentUpon>Customer_Store.cs</DependentUpon>
     </Compile>
     <Compile Include="DataProvider.cs" />
+    <Compile Include="Employees_Store.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employees_Store.Designer.cs">
+      <DependentUpon>Employees_Store.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployessController.cs" />
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +123,18 @@
     </Compile>
     <Compile Include="helpThemMH.Designer.cs">
       <DependentUpon>helpThemMH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Help_NhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help_NhanVien.Designer.cs">
+      <DependentUpon>Help_NhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Help_phieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help_phieu.Designer.cs">
+      <DependentUpon>Help_phieu.cs</DependentUpon>
     </Compile>
     <Compile Include="IssueVouControl.cs" />
     <Compile Include="IssueVouDetailMod.cs" />
@@ -188,6 +207,9 @@
     <EmbeddedResource Include="Customer_Store.resx">
       <DependentUpon>Customer_Store.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Employees_Store.resx">
+      <DependentUpon>Employees_Store.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -196,6 +218,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="helpThemMH.resx">
       <DependentUpon>helpThemMH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help_NhanVien.resx">
+      <DependentUpon>Help_NhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help_phieu.resx">
+      <DependentUpon>Help_phieu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Issue_Vou.resx">
       <DependentUpon>Issue_Vou.cs</DependentUpon>
