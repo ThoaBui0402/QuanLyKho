@@ -578,3 +578,7 @@ D:\ThucTapNhom\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.ListReceipt_Vou.resources
 D:\Ky1nam4\TTN\github\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.ListIssue_Vou.resources
 D:\Ky1nam4\TTN\github\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.ListReceipt_Vou.resources
 D:\Ky1nam4\TTN\github\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.PhieuNhap.resources
+D:\ThucTapNhom\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.PhieuNhap.resources
+D:\ThucTapNhom\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.Supplier_Store.resources
+D:\ThucTapNhom\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.Customer_Store.resources
+D:\ThucTapNhom\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.Inventory.resources

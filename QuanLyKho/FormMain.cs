@@ -190,7 +190,8 @@ namespace QuanLyKho
 
         private void tonkho_ItemClick(object sender, ItemClickEventArgs e)
         {
-
+            Inventory k = new Inventory();
+            k.Show();
         }
 
         private void dspn_ItemClick(object sender, ItemClickEventArgs e)
@@ -213,15 +214,16 @@ namespace QuanLyKho
             showFormChild(info);
         }
 
-        private void ribbonControl1_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void barButtonItem8_ItemClick(object sender, ItemClickEventArgs e)
         {
             Item_Store info = new Item_Store();
             info.init(typeOfEmployees, idEmployees);
+            showFormChild(info);
+        }
+
+        private void qlncc_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Supplier_Store info = new Supplier_Store();
             showFormChild(info);
         }
 
@@ -231,10 +233,16 @@ namespace QuanLyKho
             showFormChild(info);
         }
 
-        private void qlncc_ItemClick(object sender, ItemClickEventArgs e)
-        {
-            Supplier_Store info = new Supplier_Store();
-            showFormChild(info);
-        }
+        /*     private void qlkh_ItemClick(object sender, ItemClickEventArgs e)
+             {
+                 Customer_Store info = new Customer_Store();
+                 showFormChild(info);
+             }
+
+             private void qlncc_ItemClick(object sender, ItemClickEventArgs e)
+             {
+                 Supplier_Store info = new Supplier_Store();
+                 showFormChild(info);
+             }*/
     }
 }
