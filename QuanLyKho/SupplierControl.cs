@@ -1,16 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Linq;
+using System.Data;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace QuanLyKho
 {
+
     class SupplierControl
     {
         private static SupplierControl instance;
-
         public static SupplierControl Instance
         {
             get

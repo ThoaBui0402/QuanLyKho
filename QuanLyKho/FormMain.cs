@@ -85,6 +85,33 @@ namespace QuanLyKho
             passWord = _passWord;
             nameEmployees = _name;
         }
+        private void VisibleRpg(bool e)
+        {
+            rpgEmployees.Visible = e;
+            ribbonPageGroup1.Visible = e;
+
+        }
+        private void EnabledBtn(bool e)
+        {
+            btnAcountInfo.Enabled = e;
+            btnLogout.Enabled = e;
+            btnPrivilege.Enabled = e;
+        }
+        private void load(int _type)
+        {
+
+            VisibleRpg(false);
+
+            if (_type == 0)
+            {
+                ribbonPageGroup1.Visible = true;
+
+            }
+            if (_type == 1)
+            {
+                rpgEmployees.Visible = true;
+            }
+        }
         private void showFormChild(Form f)
         {
             if (!isOpened(f))
@@ -183,6 +210,30 @@ namespace QuanLyKho
             PhieuNhap info = new PhieuNhap();
 
             info.InitData(NameEmployees, idEmployees);
+            showFormChild(info);
+        }
+
+        private void ribbonControl1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void barButtonItem8_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Item_Store info = new Item_Store();
+            info.init(typeOfEmployees, idEmployees);
+            showFormChild(info);
+        }
+
+        private void qlkh_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Customer_Store info = new Customer_Store();
+            showFormChild(info);
+        }
+
+        private void qlncc_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Supplier_Store info = new Supplier_Store();
             showFormChild(info);
         }
     }

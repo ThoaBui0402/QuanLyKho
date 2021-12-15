@@ -169,6 +169,7 @@ namespace QuanLyKho
             this.rbpHelp});
             this.ribbonControl1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2010;
             this.ribbonControl1.Size = new System.Drawing.Size(1225, 209);
+            this.ribbonControl1.Click += new System.EventHandler(this.ribbonControl1_Click);
             // 
             // btnLogin
             // 
@@ -451,6 +452,7 @@ namespace QuanLyKho
             this.barButtonItem8.ImageOptions.Image = global::QuanLyKho.Properties.Resources.boorderitem_16x16;
             this.barButtonItem8.ImageOptions.LargeImage = global::QuanLyKho.Properties.Resources.boorderitem_32x32;
             this.barButtonItem8.Name = "barButtonItem8";
+            this.barButtonItem8.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem8_ItemClick);
             // 
             // qlnv
             // 
@@ -476,6 +478,7 @@ namespace QuanLyKho
             this.qlkh.ImageOptions.Image = global::QuanLyKho.Properties.Resources.team_16x16;
             this.qlkh.ImageOptions.LargeImage = global::QuanLyKho.Properties.Resources.team_32x32;
             this.qlkh.Name = "qlkh";
+            this.qlkh.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.qlkh_ItemClick);
             // 
             // qlncc
             // 
@@ -484,6 +487,7 @@ namespace QuanLyKho
             this.qlncc.ImageOptions.Image = global::QuanLyKho.Properties.Resources.bocustomer_16x161;
             this.qlncc.ImageOptions.LargeImage = global::QuanLyKho.Properties.Resources.bocustomer_32x321;
             this.qlncc.Name = "qlncc";
+            this.qlncc.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.qlncc_ItemClick);
             // 
             // tonkho
             // 
