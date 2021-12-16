@@ -16,13 +16,13 @@ namespace QuanLyKho
           public void InitData(string _customerName, string _employeesName,
                           int _totalPriceBill, DateTime _dateOfBill, int _customerGive, int _employeesGive, List<IssueVouDetailMod> list)
           {
-              // CustomerGive.Value = _customerGive;
-              // EmployeesGive.Value = _employeesGive;
-               //CustomerName.Value = _customerName;
-               //EmployeesName.Value = _employeesName;
-               //TotalPriceBill.Value = _totalPriceBill;
-              // DateOfBill.Value = _dateOfBill;
-              // objectDataSource1.DataSource = list;
+              CustomerGive.Value = _customerGive;
+              EmployeesGive.Value = _employeesGive;
+              CustomerName.Value = _customerName;
+              EmployeesName.Value = _employeesName;
+              TotalPriceBill.Value = _totalPriceBill;
+              DateOfBill.Value = _dateOfBill;
+              objectDataSource1.DataSource = list;
           }
      }
 }

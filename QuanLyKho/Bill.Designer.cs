@@ -29,6 +29,7 @@ namespace QuanLyKho
           /// </summary>
           private void InitializeComponent()
           {
+               this.components = new System.ComponentModel.Container();
                DevExpress.XtraReports.UI.XRSummary xrSummary1 = new DevExpress.XtraReports.UI.XRSummary();
                this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
                this.xrPanel1 = new DevExpress.XtraReports.UI.XRPanel();
@@ -74,8 +75,16 @@ namespace QuanLyKho
                this.xrTableCell11 = new DevExpress.XtraReports.UI.XRTableCell();
                this.xrTableCell13 = new DevExpress.XtraReports.UI.XRTableCell();
                this.xrTableCell12 = new DevExpress.XtraReports.UI.XRTableCell();
+               this.CustomerName = new DevExpress.XtraReports.Parameters.Parameter();
+               this.EmployeesName = new DevExpress.XtraReports.Parameters.Parameter();
+               this.DateOfBill = new DevExpress.XtraReports.Parameters.Parameter();
+               this.TotalPriceBill = new DevExpress.XtraReports.Parameters.Parameter();
+               this.CustomerGive = new DevExpress.XtraReports.Parameters.Parameter();
+               this.EmployeesGive = new DevExpress.XtraReports.Parameters.Parameter();
+               this.objectDataSource1 = new DevExpress.DataAccess.ObjectBinding.ObjectDataSource(this.components);
                ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
                ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
+               ((System.ComponentModel.ISupportInitialize)(this.objectDataSource1)).BeginInit();
                ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
                // 
                // TopMargin
@@ -498,17 +507,68 @@ namespace QuanLyKho
                this.xrTableCell12.Name = "xrTableCell12";
                this.xrTableCell12.Weight = 1.0750002041489648D;
                // 
+               // CustomerName
+               // 
+               this.CustomerName.Name = "CustomerName";
+               this.CustomerName.ValueInfo = "0";
+               // 
+               // EmployeesName
+               // 
+               this.EmployeesName.Name = "EmployeesName";
+               this.EmployeesName.Type = typeof(int);
+               this.EmployeesName.ValueInfo = "0";
+               // 
+               // DateOfBill
+               // 
+               this.DateOfBill.Name = "DateOfBill";
+               this.DateOfBill.Type = typeof(int);
+               this.DateOfBill.ValueInfo = "0";
+               // 
+               // TotalPriceBill
+               // 
+               this.TotalPriceBill.Name = "TotalPriceBill";
+               this.TotalPriceBill.Type = typeof(int);
+               this.TotalPriceBill.ValueInfo = "0";
+               // 
+               // CustomerGive
+               // 
+               this.CustomerGive.Name = "CustomerGive";
+               this.CustomerGive.Type = typeof(int);
+               this.CustomerGive.ValueInfo = "0";
+               // 
+               // EmployeesGive
+               // 
+               this.EmployeesGive.Name = "EmployeesGive";
+               this.EmployeesGive.Type = typeof(int);
+               this.EmployeesGive.ValueInfo = "0";
+               // 
+               // objectDataSource1
+               // 
+               this.objectDataSource1.DataSource = typeof(QuanLyKho.ListIssue_Vou);
+               this.objectDataSource1.Name = "objectDataSource1";
+               // 
                // Bill
                // 
                this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
             this.TopMargin,
             this.BottomMargin,
             this.Detail});
+               this.ComponentStorage.AddRange(new System.ComponentModel.IComponent[] {
+            this.objectDataSource1});
+               this.DataSource = this.objectDataSource1;
                this.Font = new System.Drawing.Font("Arial", 9.75F);
                this.Margins = new System.Drawing.Printing.Margins(100, 100, 296, 121);
+               this.Parameters.AddRange(new DevExpress.XtraReports.Parameters.Parameter[] {
+            this.CustomerName,
+            this.EmployeesName,
+            this.DateOfBill,
+            this.TotalPriceBill,
+            this.CustomerGive,
+            this.EmployeesGive});
                this.Version = "19.2";
                ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).EndInit();
                ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).EndInit();
+               ((System.ComponentModel.ISupportInitialize)(this.objectDataSource1)).EndInit();
                ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
           }
@@ -559,5 +619,12 @@ namespace QuanLyKho
           private DevExpress.XtraReports.UI.XRTableCell xrTableCell11;
           private DevExpress.XtraReports.UI.XRTableCell xrTableCell13;
           private DevExpress.XtraReports.UI.XRTableCell xrTableCell12;
+          private DevExpress.XtraReports.Parameters.Parameter CustomerName;
+          private DevExpress.XtraReports.Parameters.Parameter EmployeesName;
+          private DevExpress.XtraReports.Parameters.Parameter DateOfBill;
+          private DevExpress.XtraReports.Parameters.Parameter TotalPriceBill;
+          private DevExpress.XtraReports.Parameters.Parameter CustomerGive;
+          private DevExpress.XtraReports.Parameters.Parameter EmployeesGive;
+          private DevExpress.DataAccess.ObjectBinding.ObjectDataSource objectDataSource1;
      }
 }
