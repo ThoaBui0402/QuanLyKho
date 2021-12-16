@@ -97,21 +97,21 @@ namespace QuanLyKho
             btnLogout.Enabled = e;
             btnPrivilege.Enabled = e;
         }
-        private void load(int _type)
-        {
+        //private void load(int _type)
+        //{
 
-            VisibleRpg(false);
+        //    VisibleRpg(false);
 
-            if (_type == 0)
-            {
-                rpgStock.Visible = true;
+        //    if (_type == 0)
+        //    {
+        //        rpgStock.Visible = true;
 
-            }
-            if (_type == 1)
-            {
-                rpgEmployees.Visible = true;
-            }
-        }
+        //    }
+        //    if (_type == 1)
+        //    {
+        //        rpgEmployees.Visible = true;
+        //    }
+        //}
         private void showFormChild(Form f)
         {
             if (!isOpened(f))
@@ -173,7 +173,7 @@ namespace QuanLyKho
 
         private void FormMain_Load(object sender, EventArgs e)
         {
-            load(typeOfEmployees);
+            //load(typeOfEmployees);
         }
 
         private void hdthemmh_ItemClick(object sender, ItemClickEventArgs e)
@@ -195,13 +195,13 @@ namespace QuanLyKho
 
         private void dspn_ItemClick(object sender, ItemClickEventArgs e)
         {
-            ListIssue_Vou h = new ListIssue_Vou();
+            ListReceipt_Vou h = new ListReceipt_Vou();
             h.Show();
         }
 
         private void dspx_ItemClick(object sender, ItemClickEventArgs e)
         {
-            ListReceipt_Vou k = new ListReceipt_Vou();
+            ListIssue_Vou k = new ListIssue_Vou();
             k.Show();
         }
 
@@ -255,5 +255,12 @@ namespace QuanLyKho
             Help_NhanVien info = new Help_NhanVien();
             showFormChild(info);
         }
-    }
+
+          private void barButtonItem7_ItemClick(object sender, ItemClickEventArgs e)
+          {
+               Issue_Vou info = new Issue_Vou();
+               info.InitData(NameEmployees, idEmployees);
+               showFormChild(info);
+          }
+     }
 }
